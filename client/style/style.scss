@@ -1,0 +1,122 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    padding: 0rem 5rem 1rem 5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        
+        img {
+            max-width: 10rem;
+        }
+    }
+
+}
+
+.btn {
+    width: 8rem;
+    background-color: #fff;
+    border: none;
+    transition:250ms;
+    border-radius: 2rem;
+    padding:1rem;
+    font-weight: 600;
+    border:2px solid grey;
+
+    &:hover {
+        cursor: pointer;
+        border-color:#59829e;
+    }
+}
+
+.filter {
+    padding: 0rem 3rem 1rem 3rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+        width: 60%;
+        height:3rem;
+        border-radius: 2rem;
+        padding:.8rem;
+        border:2px solid grey;
+        outline:none;
+        transition:250ms;
+
+        &:focus {
+            border-color:#59829e;
+        }
+    }
+}
+
+
+.products {
+    display:flex;
+    margin:0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0rem 5rem 1rem 5rem;  
+
+    .product {
+        min-width: 10rem;
+        flex: 0 1 20%;
+        margin:1rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        border:2px solid grey;
+        transition:250ms;
+
+        &:hover {
+            border-color: #59829e;
+        }
+        
+        img {
+            max-width: 100%;
+            object-fit:cover;
+        }
+
+        .title {
+            padding-top:.5rem;
+        }
+        .price {
+            padding-top:.8rem;
+            font-weight: 600;
+
+            &::before {
+                content:'$';
+            }
+        }
+    }
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin:0 auto;
+
+    label {
+        padding:.5rem 0 .5rem 0;
+    }
+
+    input {
+        padding:.5rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin:0 auto;
+        margin-top:.5rem;
+
+        &:hover {
+            transform: none;
+        }
+    }
+}

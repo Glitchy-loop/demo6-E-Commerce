@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtnYFHOyIWZiECuD97PlsGMZqj7wHDZal4a_R4zB2bagC-IneqHro55OYWBZf8WHfwJXI&usqp=CAU"
+          alt="Logo"
+        />
+      </div>
+      <button class="btn" onclick="window.location.href='./add.html'">
+        Add bike
+      </button>
+    </header>
+    <div class="filter">
+      <input
+        type="search"
+        id="search"
+        name="search"
+        placeholder="Search entire store..."
+      />
+    </div>
+    <div class="products"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
