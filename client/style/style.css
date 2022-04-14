@@ -93,13 +93,8 @@ header .logo img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 2px solid grey;
   -webkit-transition: 250ms;
   transition: 250ms;
-}
-
-.products .product:hover {
-  border-color: #59829e;
 }
 
 .products .product img {
